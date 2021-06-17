@@ -1,0 +1,28 @@
+cabal-version:  1.12
+name:           rsa
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/leorigon/rsa#readme>
+homepage:       https://github.com/leorigon/rsa#readme
+bug-reports:    https://github.com/leorigon/rsa/issues
+author:         Leonardo Filipe Rigon
+maintainer:     rigonnleo@gmail.com
+copyright:      2017 Leonardo Filipe Rigon
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+
+executable rsa
+  ghc-options:      -O2
+  hs-source-dirs:   src/rsa
+  main-is:          Main.hs
+  other-modules:    Cypher
+  build-depends:    base >= 4.7 && < 5, random
+  default-language: Haskell2010
+
+executable pollardRho
+  ghc-options:      -O2
+  hs-source-dirs:   src/pollardRho
+  main-is:          Main.hs
+  other-modules:    PollardRho
+  build-depends:    base >= 4.7 && < 5, timeit
+  default-language: Haskell2010

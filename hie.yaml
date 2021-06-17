@@ -1,0 +1,13 @@
+cradle:
+  stack:
+    - path: "./src/rsa/Main.hs"
+      component: "rsa:exe:rsa"
+
+    - path: "./src/rsa/Cypher.hs"
+      component: "rsa:exe:rsa"
+
+    - path: "./src/pollardRho/Main.hs"
+      component: "rsa:exe:pollarRho"
+
+    - path: "./src/pollardRho/PollardRho.hs"
+      component: "rsa:exe:pollarRho"
